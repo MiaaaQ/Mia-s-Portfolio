@@ -14,33 +14,44 @@
 body{
   font-family: yugothic;
   color:#4F4F4F;
+  background-color: #F4F4F4;
 }
 
-.resume{
-  color:#EF7878;
+.card{
+  background-color: #00000000;
 }
 
 .resume:hover{
+  color:#EF7878;
+  background-color:#00000000;
+  font-weight: unset;
+}
+
+.resume{
   color:#4F4F4F;
   background-color: #EF7878;
   font-weight:bold;
 }
 
-.works{
+.works:hover{
   color:#90C1DD;
+  background-color:#00000000;
+  font-weight: unset;
 }
 
-.works:hover{
+.works{
   color:#4F4F4F;
   background-color: #90C1DD;
   font-weight:bold;
 }
 
-.contact{
+.contact:hover{
   color:#90DDA2;
+  background-color:#00000000;
+  font-weight: unset;
 }
 
-.contact:hover{
+.contact{
   color: #4F4F4F;
   background-color:#90DDA2;
   font-weight:bold;
