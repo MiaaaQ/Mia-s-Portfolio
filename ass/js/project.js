@@ -70,7 +70,12 @@ function setProject(n){
 
   let img=`<div id='projectImg' class='projectImg'>`;
   for(let i=1;i<=project[n].imgcount;i++){
-    img+=`  <img class="mySlides" src="ass/img/${project[n].imgsrc}/${i}.jpg">`;
+    if(i==1){
+      img+=`  <img class="mySlides" style='display:block;' src="ass/img/${project[n].imgsrc}/${i}.jpg">`;
+    }else{
+      img+=`  <img class="mySlides" style='display:none;' src="ass/img/${project[n].imgsrc}/${i}.jpg">`;
+    }
+  
   }
   img+=`</div>`;
   $('#window')[0].innerHTML+=img;
