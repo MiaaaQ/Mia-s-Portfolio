@@ -1,0 +1,77 @@
+.window {
+  background-color: wheat;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 5%;
+  height: 100%;
+}
+
+.projectImg {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projectImg > img {
+  max-height: 100%;
+}
+
+.projectImgBox {
+  height: 18%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-top: 2%;
+}
+
+.projectImgBox > img {
+  height: 100%;
+}
+
+.outsideWindow {
+  position: fixed;
+  display: block;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  background-color: #00000099;
+}
+
+.mySlidesBox {
+  display: inline-block;
+}
+
+.projectSliderLeft {
+  position: absolute;
+  top: 40%;
+}
+
+.projectSliderRight {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.projectContent {
+    height: 15%;
+}
+
+
+.projectTitle {
+    height: 5%;
+}
+
+#close {
+  position: absolute;
+  right: 8%;
+  top: 12%;
+  text-align: center;
+  line-height: 100%;
+  font-size: 50px;
+}
