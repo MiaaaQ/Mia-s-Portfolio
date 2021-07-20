@@ -30,15 +30,15 @@ project.push({title:title,content:content,imgsrc:imgsrc,imgcount:imgcount});
 //技術-學術頒獎
 titles='技術-學術頒獎';
 content='技術-學術頒獎';
-imgsrc='01';
-imgcount=4;
+imgsrc='02';
+imgcount=7;
 project.push({title:title,content:content,imgsrc:imgsrc,imgcount:imgcount});
 
 //技術-日日新
 titles='技術-';
 content='技術-學術頒獎';
 imgsrc='01';
-imgcount=4;
+imgcount=8;
 project.push({title:title,content:content,imgsrc:imgsrc,imgcount:imgcount});
 
 //技術-學術頒獎
