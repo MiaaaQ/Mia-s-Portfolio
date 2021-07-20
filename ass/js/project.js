@@ -21,10 +21,10 @@ function showDivs(n) {
 let project=[];
 
 //繪圖作品
-let title='繪圖作品';
-let content='繪圖作品內文';
+let title='專題-Sunshine天晴';
+let content='負責整體網頁設計、插圖繪製、商品圖繪製、網頁美觀樣式調整';
 let imgsrc='01';
-let imgcount=20;
+let imgcount=4;
 project.push({title:title,content:content,imgsrc:imgsrc,imgcount:imgcount});
 
 //技術-學術頒獎
