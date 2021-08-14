@@ -6,42 +6,42 @@ $(()=>{
   project.project=[];
 
   //作品區
-  project.projectListTitles='作品區';
-  project.projectListContent='這是作品這是作品';
+  project.projectListTitles='繪圖作品';
+  project.projectListContent='前三張為接案的logo /浮水印設計<br>其餘為日常的繪圖作品';
   project.projectListImgsrc='01';
   project.projectListImgcount=20;
 
   //專題-雨傘
-  project.titles='專題-雨傘';
-  project.content='繪圖作品內文';
+  project.titles='【專題-兩傘購物網站】';
+  project.content='網站設計以及輪播圖，商品圖繪製';
   project.imgsrc='02';
   project.imgcount=4;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
   
   //專題-紙膠帶
-  project.titles='專題-紙膠帶';
-  project.content='技術-學術頒獎';
+  project.titles='【專題-紙膠帶購物網站】';
+  project.content='輪播圖繪製';
   project.imgsrc='03';
   project.imgcount=1;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
   
   //專題-薑黃餅乾
-  project.titles='專題-薑黃餅乾';
-  project.content='技術-學術頒獎';
+  project.titles='【專題-與慈善機構合作販售薑黃餅乾】';
+  project.content='商品攝影，吉祥物與感謝卡繪製';
   project.imgsrc='04';
   project.imgcount=4;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
   
   //設計作品-日日新
-  project.titles='設計作品-日日新';
-  project.content='技術-學術頒獎';
+  project.titles='【設計-日日新演講活動】';
+  project.content='涵蓋2019.03-2021.06的設計版型<br>負責設計海報，網路宣傳及輪播圖';
   project.imgsrc='05';
   project.imgcount=6;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
   
   //設計作品-學術頒獎會
-  project.titles='設計作品-學術頒獎會';
-  project.content='技術-學術頒獎';
+  project.titles='【設計-學術頒獎邀請函】';
+  project.content='設計邀請函版面';
   project.imgsrc='06';
   project.imgcount=1;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
@@ -67,7 +67,9 @@ $(()=>{
   }
   //slider
   project.slider=(n)=>{
-    $('#slider')[0].innerHTML=''
+    $('#exampleModalLabel')[0].innerHTML=project.project[n].title;
+    $('#exampleModalLabel2')[0].innerHTML=project.project[n].content;
+    $('#slider')[0].innerHTML='';
     for(let i=1;i<=project.project[n].imgcount;i++){
       $('#slider')[0].innerHTML+=`	
       <div class="carousel-item ${i==1?'active':''}">
