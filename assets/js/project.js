@@ -9,7 +9,7 @@ $(()=>{
   project.projectListTitles='繪圖作品';
   project.projectListContent='前三張為接案的logo /浮水印設計<br>其餘為日常的繪圖作品';
   project.projectListImgsrc='01';
-  project.projectListImgcount=20;
+  project.projectListImgcount=9;
 
   //專題-雨傘
   project.titles='【專題-兩傘購物網站】';
