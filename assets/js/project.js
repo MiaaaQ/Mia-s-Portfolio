@@ -26,7 +26,7 @@ $(()=>{
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
   
   //專題-薑黃餅乾
-  project.titles='【專題-與慈善機構合作販售薑黃餅乾】';
+  project.titles='【專題-行銷薑黃餅乾】';
   project.content='商品攝影，吉祥物與感謝卡繪製';
   project.imgsrc='04';
   project.imgcount=4;
