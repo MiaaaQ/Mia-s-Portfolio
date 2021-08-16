@@ -177,12 +177,12 @@ h3 {
 
 .resume .base .follow .box i {
   display: inline-block;
-  font-size: 30px;
+  font-size: 25px;
   background: #FD999A;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  line-height: 60px;
+  line-height: 50px;
   color: #fcfcfc;
   margin: 0 10px 10px 0px;
   transition-duration: 0.3s;
