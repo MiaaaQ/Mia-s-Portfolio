@@ -52,38 +52,32 @@ $(()=>{
   for(let i =0;i<project.project.length;i++){
     $('#projectBox')[0].innerHTML+=`
     <div class="col-4 col-12-medium">
-    <span class="image fit"><img src="images/${project.project[i].imgsrc}/1.jpg" alt=""></span>
+    <span class="image fit">
+    <div id='slider${i}'>
+      <a href='images/${project.project[i].imgsrc}/1.jpg'  class="image hit">
+       <img class="d-block h-100" src="images/${project.project[i].imgsrc}/1.jpg"" alt="First slide">
+      </a>
+    </div>
+    </span>
     <h3>${project.project[i].title}</h3>
     <p>${project.project[i].content}</p>
     <ul class="actions special">
-      <li>
-        <button  onclick='project.slider(${i})' style="background-color: #e5e5e5;border-color: #e5e5e5;"  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          More
-        </button>
-      </li>
-    </ul>
-  </div>
-    `;
-  }
-  //slider
-  project.slider=(n)=>{
-    $('#exampleModalLabel')[0].innerHTML=project.project[n].title;
-    $('#exampleModalLabel2')[0].innerHTML=project.project[n].content;
-    $('#slider')[0].innerHTML='';
-    for(let i=1;i<=project.project[n].imgcount;i++){
-      $('#slider')[0].innerHTML+=`	
-      <div class="carousel-item ${i==1?'active':''}">
-      <a href='images/${project.project[n].imgsrc}/${i}.jpg'  class="image hit"><img class="d-block h-100" src="images/${project.project[n].imgsrc}/${i}.jpg" alt="First slide"></a>
+  </div>`;
+
+
+    for(let j=2;j<=project.project[i].imgcount;j++){
+      $(`#slider${i}`)[0].innerHTML+=`	
+      <div style='display:none'>
+      <a href='images/${project.project[i].imgsrc}/${j}.jpg'  class="image hit">
+      <img class="d-block h-100" src="images/${project.project[i].imgsrc}/${j}.jpg" alt="First slide">
+      </a>
     </div>`
     }
-    $('#footerimg')[0].innerHTML=''
-    for(let i=0;i<project.project[n].imgcount;i++){
-      $('#footerimg')[0].innerHTML+=`	
-      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="${i}" aria-label="Slide ${i}">	
-      <img class="d-block h-100" src="images/${project.project[n].imgsrc}/${(i+1)}.jpg" alt="First slide">
-      </button>`
-    }
-    $('#slider').poptrox({
+
+   
+  }
+    for(let i =0;i<project.project.length;i++){
+    $(`#slider${i}`).poptrox({
       onPopupOpen: function() { $('#slider').addClass('is-poptrox-visible'); },
       onPopupClose: function() { $('#slider').removeClass('is-poptrox-visible'); },
       overlayColor: '#1a1f2c',
@@ -92,8 +86,7 @@ $(()=>{
       usePopupNav: true,
       windowMargin: 50
     });
-  };
-  
+  }
  
 
  //作品區程式
@@ -111,10 +104,9 @@ $(()=>{
     `;
   }
 
-  var $body = $('body');
   $('#projectList').poptrox({
-    onPopupOpen: function() { $body.addClass('is-poptrox-visible'); },
-    onPopupClose: function() { $body.removeClass('is-poptrox-visible'); },
+    onPopupOpen: function() {  $('#projectList').addClass('is-poptrox-visible'); },
+    onPopupClose: function() { $('#projectList').removeClass('is-poptrox-visible'); },
     overlayColor: '#1a1f2c',
     overlayOpacity: 0.75,
     usePopupCloser: false,
