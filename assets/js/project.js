@@ -46,6 +46,13 @@ $(()=>{
   project.imgcount=1;
   project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
 
+  //字法
+  project.titles='【字法-設計字體】';
+  project.content='此為團體發表(構思>討論>實踐)<br>由包浩斯元素去做字體發想設計';
+  project.imgsrc='07';
+  project.imgcount=3;
+  project.project.push({title:project.titles,content:project.content,imgsrc:project.imgsrc,imgcount:project.imgcount});
+
 
   //專題程式
   $('#projectBox')[0].innerHTML=``;
