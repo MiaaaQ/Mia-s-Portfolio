@@ -57,7 +57,7 @@ $(()=>{
     <p>${project.project[i].content}</p>
     <ul class="actions special">
       <li>
-        <button  onclick='project.slider(${i})'  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button  onclick='project.slider(${i})' style="background-color: #e5e5e5;border-color: #e5e5e5;"  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           More
         </button>
       </li>
