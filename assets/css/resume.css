@@ -279,13 +279,7 @@ h3 {
   }
 }
 
-.resume .func .work ul li:first-of-type::before,
-.resume .func .extr ul li:first-of-type::before,
-.resume .func .edu ul li:first-of-type::before {
-  width: 10px;
-  height: 10px;
-  left: -2px;
-}
+
 
 .resume .func .work ul li:last-of-type,
 .resume .func .extr ul li:last-of-type,
@@ -313,12 +307,12 @@ h3 {
 .resume .func .work ul li::before,
 .resume .func .extr ul li::before,
 .resume .func .edu ul li::before {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
+  left: -2px;
   border: 3px solid #3d405b;
   background: #fcfcfc;
   border-radius: 50%;
-  left: 0;
   z-index: 1;
 }
 
