@@ -1,7 +1,7 @@
 body,
 html {
     margin: 0;
-    font-family: "Ubuntu", "Ã¥Â¾Â®Ã¨Â»Å¸Ã¦Â­Â£Ã©Â»â€˜Ã©Â«â€", sans-serif;
+    font-family: "Ubuntu", "ÃƒÂ¥Ã‚Â¾Ã‚Â®ÃƒÂ¨Ã‚Â»Ã…Â¸ÃƒÂ¦Ã‚Â­Ã‚Â£ÃƒÂ©Ã‚Â»Ã¢â‚¬ËœÃƒÂ©Ã‚Â«Ã¢â‚¬Â", sans-serif;
     letter-spacing: 0.65px;
     font-size: 15px;
     color: #555;
@@ -161,7 +161,7 @@ h3 {
 .resume .base .follow .box a {
   display: inline-block;
   vertical-align: text-bottom;
-  width: calc(100%/3.5);
+  width: calc(100%/3.2);
   min-width: 57px;
 }
 
