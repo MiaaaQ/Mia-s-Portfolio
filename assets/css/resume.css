@@ -161,7 +161,8 @@ h3 {
 .resume .base .follow .box a {
   display: inline-block;
   vertical-align: text-bottom;
-  width: calc(100%/3);
+  width: calc(100%/3.5);
+  min-width: 57px;
 }
 
 .resume .base .follow .box a:hover i {
