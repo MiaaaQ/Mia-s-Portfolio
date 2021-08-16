@@ -349,7 +349,7 @@ h3 {
 }
 
 .resume .func .extr {
-  width: 58%;
+  width: 100%;
 }
 
 .resume .func .skills-prog {
@@ -399,9 +399,7 @@ h3 {
 }
 
 .resume .func .skills-soft ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  text-align: left;
 }
 
 .resume .func .skills-soft ul li {
