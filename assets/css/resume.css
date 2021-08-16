@@ -537,3 +537,17 @@ button.carousel-control-prev {
 .nav-previous {
     color: black !important;
 }
+
+.poptrox-popup {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.nav-previous div {
+  width: 50px !important;
+}
+
+
+.nav-next div {
+  width: 50px !important;
+}

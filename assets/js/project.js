@@ -12,7 +12,7 @@ $(()=>{
   project.projectListImgcount=9;
 
   //專題-雨傘
-  project.titles='【專題-兩傘購物網站】';
+  project.titles='【專題-雨傘購物網站】';
   project.content='網站設計以及輪播圖，商品圖繪製';
   project.imgsrc='02';
   project.imgcount=4;
