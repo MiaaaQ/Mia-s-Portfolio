@@ -544,3 +544,17 @@ button.carousel-control-prev {
 .nav-next div {
   width: 50px !important;
 }
+
+.hashtag {
+  border-radius: 50px;
+  background: #ffff;
+}
+
+.hashtagdiv li {
+  transition: all 0.3s;
+}
+
+.hashtagdiv:hover li:hover {
+  color: #FD999A;
+  transform: scale(1.1);
+}
